@@ -1,3 +1,4 @@
+#!/usr/bin/sh
 dir=`mktemp -d`
 node progress.js $dir $1 $2 
 convert -delay 100 -loop 100 $dir/*.png $3
